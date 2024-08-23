@@ -1,0 +1,134 @@
+body{
+    display:flex;
+    width: 98%;
+    height: 92vh;
+    background-color: rgba(0, 0, 0, 0.322);
+    justify-content: center;
+    align-items: center;
+}
+.p1{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    padding: 8px;
+    background: linear-gradient(to right,rgb(119, 0, 255),rgb(71, 6, 57));
+    box-shadow: 0px 0px 20px black;
+    overflow: hidden;
+}
+.p2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background:radial-gradient(circle,rgb(2, 2, 58),black);
+    justify-content: center;
+    align-items:center;
+}
+.aigille{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* justify-content: center; */
+    padding-left: 285px;
+    align-items:center;
+    /* background-color: beige; */
+
+}
+.x{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+}
+.x2{
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+    height: 14%;
+    width: 100%;
+    text-align: center;
+}
+
+.a1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(119, 0, 255);
+    z-index: 1;
+
+}
+
+.a2{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color:rgb(71, 6, 57);
+    z-index: 1;
+}
+
+.pt1{
+    width: 110px;
+    height: 8px;
+    /* margin-left: 143px; */
+    border-radius: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgb(119, 0, 255),rgb(71, 6, 57));
+    transform-origin: left center; /* Change as needed */
+    transform-origin: 6% 50%;
+    animation: rot1 3600S linear infinite;
+}
+
+.pt2{
+    width: 80px;
+    height: 8px;
+    /* margin-left: 143px; */
+    border-radius: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgb(119, 0, 255),rgb(71, 6, 57));
+    transform-origin: left center; /* Change as needed */
+    transform-origin: 6% 50%;
+    animation: rot2 216000S linear infinite;
+}
+
+.pt3{
+    width: 130px;
+    height: 2px;
+    /* margin-left: 143px; */
+    border-radius: 100%;
+    position: absolute;
+    background: rgb(119, 0, 255);
+    transform-origin: left center; /* Change as needed */
+    transform-origin: 6% 50%;
+    animation: rot3 60S linear infinite;
+
+}
+
+@keyframes rot3 {
+    from{
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rot2 {
+    from{
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rot1 {
+    from{
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}

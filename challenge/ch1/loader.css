@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    display: flex;
+    width: 96%;
+    height: 96vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    display: flex;
+    width: 50px;
+    position: relative;
+    height: 50px;
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding-right: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px blue;
+    border: 2px solid blue;
+    border-right: 0px;
+    animation: animation1 2s infinite ease-in-out;
+}
+.tree{
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-top: 20px;
+    border-left: 2px solid black;
+    box-shadow: 0 0 20px blue;
+    border: 2px solid blue;
+    animation: animation3 2s infinite ease-in-out;
+    
+}
+.two{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    width: 66px;
+    height: 50px;
+    background-color: black;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    padding-bottom: 17px;
+    border-top: 4px solid blue;
+    animation: animation2 2s infinite ease-in-out;
+}
+@keyframes animation3 {
+    0%{
+        box-shadow: 0 0 20px black;
+        border: 2px solid black;
+    }
+    35%{
+        box-shadow: 0 0 20px blue;
+        border: 2px solid blue;
+    }
+}
+@keyframes animation1 {
+    0%{
+        box-shadow: 0 0 20px black;
+        border: 2px solid black;
+    }
+    35%{
+        box-shadow: 0 0 20px black;
+        border: 2px solid black;
+    }
+    75%{
+        box-shadow: 0 0 20px blue;
+        border: 2px solid blue;
+    }
+    
+}
+
+@keyframes animation2 {
+    0%{
+        border-top: 4px solid black;
+
+    }
+    75%{
+        border-top: 4px solid black;
+
+    }
+    100%{
+        border-top: 4px solid blue;
+    }
+}

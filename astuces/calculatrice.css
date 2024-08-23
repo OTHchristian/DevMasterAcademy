@@ -1,0 +1,64 @@
+body{
+    display:flex;
+    width: 98%;
+    height: 92vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 350px;
+    height: 600px;
+    background:linear-gradient(to right,white,rgba(0, 0, 0, 0.199)) ;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+}
+.ecran{
+    width: 96%;
+    height: 15%;
+    background-color: white;
+    margin-left: 2%;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* background:radial-gradient(circle,white,rgba(0, 0, 0, 0.199)); */
+    box-shadow: 0px 0px 10px black;
+}
+.operation{
+    display: flex;
+    width: 99%;
+    height: 50%;
+    border-width: 0px;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background:transparent;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.forbtn{
+    padding-top: 15px;
+    width: 96%;
+    margin-left: 2%;
+    height: 74%;
+
+}
+.ligne{
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+}
+.btn{
+    display: flex;
+    width: 23%;
+    height: 14%;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background:radial-gradient(circle,rgba(0, 0, 0, 0.199),white);
+    transition: 0.6s;
+}

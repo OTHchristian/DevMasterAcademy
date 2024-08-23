@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    width: 95%;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.head{
+    /* display:flex; */
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border-width:2px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgba(245, 245, 7, 0.616);
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgb(217, 255, 0);
+    animation: colorhead 4s infinite ease-in-out
+}
+
+.x1{
+    display:flex;
+    margin-top: 30px;
+    width: 95%;
+    height: 80px;
+    /* background-color: white; */
+    justify-content: space-around;
+    animation: open-close 4s infinite ease-in-out;
+    position: sticky;
+}
+.eyes{
+    display: flex;
+    height: 100%;
+    width: 40px;
+    border-width:2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+@keyframes open-close {
+    0%{
+        height: 80px;
+    }
+    32%{
+        height: 40px;
+        padding-top: 80px;
+    }
+}
+@keyframes open-close2 {
+    0%{
+        height: 70px;
+    }
+    32%{
+        height: 8px;
+    }
+}
+@keyframes colorhead {
+    0%{
+        background-color: rgba(245, 245, 7, 0.616);
+        box-shadow: 0px 0px 20px rgb(217, 255, 0);
+    }
+    32%{
+        background-color: rgba(230, 79, 79, 0.829);
+        box-shadow: 0px 0px 20px red; 
+    }
+}
+.e1{
+    width: 60%;
+    height: 50%;
+    border-radius: 100%;
+    background-color: rgb(90, 90, 236);
+    /* box-shadow: -1px -1px 20px blue; */
+}
+.bouche{
+    display: flex;
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    animation: open-close2     4s infinite ease-in-out;
+}
+.p1{
+    width: 150px;
+    height: 100%;
+    border-width:2px;
+    border-style: solid;
+    border-color: black;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background-color: rgba(255, 4, 4, 0.322);
+}
+.p2{
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
