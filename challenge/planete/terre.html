@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="terre.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container2">
+        <section class="stage">
+            <figure class="ball"><span class="shadow"></span></figure>
+        </section>
+        <div class="container">
+            <div class="col-xl-12" style="padding-top: 20px;">
+                <div class="source">
+                    <div style="width: 98%;height: 80%;">
+                        <pre>
+                            <code class="language-css">
+body{
+background-color: white;
+}
+.container{
+display: flex;
+width: 100%;
+height: 96vh;
+justify-content: center;
+align-items: center;
+perspective: 300px;
+}
+
+.wrapper{
+width: 300px;
+height: 300px;
+background-color: white;
+transition: 1s;
+}
+.wrapper:hover{
+transform: rotate3d(0,1,0,-90deg);
+background-color: pink;
+border: 4px solid pink;
+}
+
+
+.wrap {
+perspective: 800px;
+perspective-origin: 50% 100px;
+}
+.cube {
+position: relative;
+width: 200px;
+transform-style: preserve-3d;
+}
+.cube div {
+position: absolute;
+width: 200px;
+height: 200px;
+box-shadow: 0px 0px 800px rgba(0, 0, 0, 0.493);
+}
+.back {
+transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+transform: rotateY(-270deg) translateX(100px);
+transform-origin: top right;
+}
+.left {
+transform: rotateY(270deg) translateX(-100px);
+transform-origin: center left;
+}
+.top {
+transform: rotateX(-90deg) translateY(-100px);
+transform-origin: top center;
+}
+.bottom {
+transform: rotateX(90deg) translateY(100px);
+transform-origin: bottom center;
+}
+.front {
+transform: translateZ(100px);
+}
+@keyframes spin {
+from { transform: rotateY(0); }
+to { transform: rotateY(360deg); }
+}
+
+.cube {
+animation: spin 20s infinite linear;
+}
+@keyframes spin-vertical {
+from { transform: rotateX(0); }
+to { transform: rotateX(-360deg); }
+}
+
+.cube-wrap.vertical .cube {
+margin: 0 auto; /* keeps the cube centered */
+
+transform-origin: 0 100px;
+animation: spin-vertical 5s infinite linear;
+}
+
+.cube-wrap.vertical .top {
+transform: rotateX(-270deg) translateY(-100px);
+}
+
+.cube-wrap.vertical .back {
+transform: translateZ(-100px) rotateX(180deg);
+}
+
+.cube-wrap.vertical .bottom {
+transform: rotateX(-90deg) translateY(100px);
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="source">
+                    <div style="width: 98%;height: 80%;">
+                        <pre>
+                            <code class="language-html">
+&lt;section class="stage"&gt;
+&lt;figure class="ball"&gt;&lt;span class="shadow"&gt;&lt;/span&gt;&lt;/figure&gt;
+&lt;/section&gt;
+                            </code>
+                        </pre> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
